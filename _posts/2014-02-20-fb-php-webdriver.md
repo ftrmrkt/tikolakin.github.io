@@ -9,7 +9,7 @@ This article will explain how to do Webdriver tests using the Facebook Webdriver
 Another author has created instructions here:
 [Using Selenium 2 & PHPUnit to automate browser testing](http://edvanbeinum.com/using-selenium-2-phpunit-to-automate-browser-testing)
 
-Before beginning ensure you have a working installation of Apache, PHP, Pear and PHPUnit on Windows. Here is my post on this subject:For Dummies Guide to Installing Pear, PHPUnit...
+Before beginning ensure you have a working installation of Apache, PHP, Pear and PHPUnit.
 
 You may also want to update PHPUnit if it is an old version by opening the command line and typing:
 -----------------------------------
