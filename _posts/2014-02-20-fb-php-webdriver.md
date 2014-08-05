@@ -82,7 +82,7 @@ Open a new php document and put the following code in it:
 Save it as __WebdriverTest.php__. The script will open __https://github.com__, click on the images button and then assert that the page is now "https://startingpage.com/". Go to the link at the start of the article for a fuller explanation of this code. 
 Running the Test
 
-Open command prompt > cd to the directory containing the standalone server and run it with:
+Open terminal, go to the directory containing the standalone server and run it with:
 
 -------------------------------------------
     java -jar selenium-server-standalone.jar
