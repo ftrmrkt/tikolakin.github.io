@@ -18,12 +18,12 @@ You may also want to update PHPUnit if it is an old version by opening the comma
 
 -----------------------------------
 
-Ensure Curl is installed on your server computer, without this you will get an error, 
+Ensure Curl is installed on your server computer, without this you will get an error
+
 -----------------------------------
     Fatal error: Call to a member function close() on a non-object
   
 -----------------------------------
-
 
 To switch Curl on, go to your __php.ini__ file and ensure that __extension=php_curl.dll__ is uncommented. Restart the webserver.
 
@@ -33,6 +33,7 @@ Download the latest Selenium 2 Server Standalone from the [Selenium website](htt
 
 
 Open a new php document and put the following code in it: 
+
 ------------------------------------
     <?php
     require_once '../php-webdriver/__init__.php';
