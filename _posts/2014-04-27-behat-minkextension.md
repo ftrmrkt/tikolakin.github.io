@@ -6,10 +6,6 @@ category: bdd
 
 *If you just want the code, you can find it [over on Github](https://github.com/tikolakin/behat-minkextension)*
 
-Around a week ago, I wrote up my experience using Behat, Mink and Selenium2/WebDriver. As it turns out, whilst it was a good learning experience and it did work, I was going about it completely the wrong way.
-
-Whilst working with Mink, I kept seeing mentions to MinkExtension, but didn’t see any details anywhere so I just ignored it. Soon after publishing my last post, [Everzet](https://twitter.com/everzet) commented and posted a link to some MinkExtension docs. I’ve run through the install process and it’s much easier. However, the docs aren’t complete for using Selenium2 so I’m still going to document the process here.
-
 ###Installing with Composer
 
 As before, the easiest way to get Behat installed is to use [Composer](http://getcomposer.org/). Once you’ve [installed Composer](http://getcomposer.org/doc/01-basic-usage.md), create a **composer.json** file that contains the following:
