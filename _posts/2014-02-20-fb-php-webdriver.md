@@ -120,5 +120,7 @@ The Facebook PHP Webdriver wrapper is based on the JSON Wire Protocol so many of
 You can learn more about the Facebook Webdriver wrapper at: 
 
 [Readme](https://github.com/facebook/php-webdriver#readme)
+
 [Examples page](https://github.com/facebook/php-webdriver/wiki/Example-command-reference)
+
 [Running different browsers](https://github.com/facebook/php-webdriver/wiki/Launching-Browsers)
