@@ -12,6 +12,7 @@ Another author has created instructions here:
 Before beginning ensure you have a working installation of Apache, PHP, Pear and PHPUnit.
 
 You may also want to update PHPUnit if it is an old version by opening the command line and typing:
+
 -----------------------------------
     pear upgrade phpunit/PHPUnit
 
