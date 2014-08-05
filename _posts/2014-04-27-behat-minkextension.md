@@ -4,7 +4,7 @@ title: Behat - MinkExtension
 category: bdd
 ---
 
-*If you just want the code, you can find it [over on Github](https://github.com/tikolakin/behat-minkextension)*
+*If you just want the code, you can find it __[over on Github](https://github.com/tikolakin/behat-minkextension)__*
 
 ###Installing with Composer
 
