@@ -113,9 +113,8 @@ Unless they have changed something on the website.
 
 ###Learning More
 
-The Facebook PHP Webdriver wrapper is based on the JSON Wire Protocol so many of the functions have the same name or are similar. You can look up more information by going to the protocol's function page at:The WebDriver Wire Protocol.
+The Facebook PHP Webdriver wrapper is based on the JSON Wire Protocol so many of the functions have the same name or are similar. You can look up more information by going to the protocol's function page at: [The WebDriver Wire Protocol](http://code.google.com/p/selenium/wiki/JsonWireProtocol)
 
- __http://code.google.com/p/selenium/wiki/JsonWireProtocol__
 
 You can learn more about the Facebook Webdriver wrapper at: 
 
