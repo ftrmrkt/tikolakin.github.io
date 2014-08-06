@@ -79,26 +79,14 @@ You’ll be able to run **./behat -di** now to view a list of all of the availab
 
 ###Selenium Server
 
-Now, I’m not sure how this would work for people that work on GUI machines, but I develop in a virtual machine so there’s no way to run browsers on them. To get around this, I use [Selenium Grid](http://code.google.com/p/selenium/wiki/Grid2) to run the tests remotely on my iMac.
+Firstly, you’ll want to download [Selenium Server](http://seleniumhq.org/download/)
 
-Firstly, you’ll want to download [Selenium Server](http://seleniumhq.org/download/) on all the machines involved.
-
-You’ll want to run the following command on the machine that’s running the tests (the machine on which you run **./behat**). This sets up a hub that can receive connections from a node reporting that there are browsers available to test with.
+You’ll want to run the following command on the machine that’s running the tests (the machine on which you run **./behat**). 
 
 ---------------------------------------
-	java -jar selenium-server-standalone-2.25.0.jar -role hub
+	java -jar selenium-server-standalone-2.25.0.jar
 
 ---------------------------------------
-On the machine that you want to run the browser on, run the command:
-
----------------------------------------
-	java -jar selenium-server-standalone-2.25.0.jar -role node -hub http://192.168.56.101:4444/grid/register -browser browserName=firefox,version=14,maxInstances=1
-
----------------------------------------
-
-This starts up Selenium server in node mode. Node mode registers that you have available browsers and fires up browser windows to automate.
-
-The IP address provided should be the IP address of the machine that you set up as a hub. The browser parameter is what browser will be used to run the test. Finally, I set maxInstances to 1 so that we only run one test at a time and my machine doesn’t fall over.
 
 ###Your first feature
 
