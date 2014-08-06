@@ -4,7 +4,7 @@ logo:             logo.jpg
 disqus_shortname: tikolakingithubio
 search:           false
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://tikolakin.github.io
+url:
 
 # Owner/author information
 owner:
