@@ -1,6 +1,6 @@
 ---
 layout: post
-title: bdd - starting with quality
+title: BDD - starting with quality
 category: bdd, behat
 ---
 
@@ -17,11 +17,14 @@ For me, this is where the problem lies. But how do we solve the problem?
 We realised that actually, we never really discussed what quality meant to a particular story or sprint. We had made assumptions about the quality based on the content of the story and the acceptance criteria. As long as the story met those acceptance criteria and didn’t have any defects, we assumed we were done. In reality, we weren’t really thinking about what constitutes quality but just what constitutes the feature.
 
 So we decided to start with quality. It made sense to talk about what we thought quality meant to any particular story before we talked about anything else. At the beginning of planning a story in sprint planning, we would spend some time discussing what quality meant to this feature. Using the example of a login screen, the story might be:
-```gerkin
-As a user,
-I need to log in to the site,
-to access all the features.
-```
+
+----
+	As a user,
+	I need to log in to the site,
+	to access all the features.
+
+----
+
 Before we chose to start with quality, we might discuss what the feature looked like, or we may already have a design for it. But then we’d just jump straight into the technical planning: how do we implement it, what code do we need, database schemas – that kind of thing. Instead, now we talk about the feature from a users’ point of view:
 
 What happens if they get their password wrong?
@@ -34,25 +37,27 @@ This opened up a whole new discovery phase. Product Owners cannot think of every
 
 The solution we chose was to use a new tool. BDD (Behaviour Driven Development) is a method of functional testing which allows you to describe the functionality of a feature in a “scenario” file in plain english:
 
-```gerkin
-Given I am on the login page 
-When I enter ‘mikepearce’ into the username field 
-And I enter ‘butteryballs’ into the password field 
-And I click “login” 
-Then I should see my dashboard. 
-```
+----
+	Given I am on the login page 
+	When I enter ‘mikepearce’ into the username field 
+	And I enter ‘butteryballs’ into the password field 
+	And I click “login” 
+	Then I should see my dashboard. 
+
+----
 
 We can then use a BDD framework to run these scenarios against our web application. We use Behat as a framework and it works really well (apart from our problem of data fixtures…). It pretends it’s a browser (and, will use Firefox if it needs to work with javascript) and does what your user would do with your system. This allows us to have automated functional testing too. Awesome.
 
 So, when we’re doing this extra discovery step, we record our findings as these step definitions, instead of acceptance criteria:
 
-```gerkin
-Given I am on the login page
-When I enter ‘mikepearce’ into the username field
-And I enter ‘wrongpassword’ into the password field
-Then I should see the message ‘Sorry, your password is wrong’
-And I should see the link ‘Did you forget your password?’
-```
+----
+	Given I am on the login page
+	When I enter ‘mikepearce’ into the username field
+	And I enter ‘wrongpassword’ into the password field
+	Then I should see the message ‘Sorry, your password is wrong’
+	And I should see the link ‘Did you forget your password?’
+
+----
 
 We slowly build up a specification file for this feature, which is mostly centred around the “happy path” and add edge cases or problem scenarios if we think of them. It’s important to note that we don’t expect to think of EVERYTHING in this session as we time box it to ten minutes and expect other features or ideas to emerge during the sprint.
 
