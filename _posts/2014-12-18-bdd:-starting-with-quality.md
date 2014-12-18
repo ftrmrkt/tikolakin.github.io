@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BDD: STARTING WITH QUALITY
+title: bdd: starting with quality
 category: bdd, behat
 ---
 
