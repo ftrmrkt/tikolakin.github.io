@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing Xdebug for PHP7
+title: Installing Xdebug  for PHP7
 category: php7, xdebug
 ---
 
@@ -64,7 +64,7 @@ If it does not, you are using the wrong phpize. Please follow this [FAQ entry](h
 
 ## Enable Remote Xdebug
 
-To use[Xdebug remote debugging on a host computer you need to enable remote debugging on the guest server. In my case the guest is the Vagrant Homestead VM.
+To use Xdebug remote debugging on a host computer you need to enable remote debugging on the guest server. In my case the guest is the Vagrant Homestead VM.
 
 In the guest php.ini file add:
 
