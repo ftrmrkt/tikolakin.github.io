@@ -1,3 +1,3 @@
-tikolain.github.io
+tikolakin.github.io
 ======================
 Repository for my blog
