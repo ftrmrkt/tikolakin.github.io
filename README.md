@@ -1,3 +1,3 @@
-tikolakin.github.io
+tikoqa.com
 ======================
 Repository for my blog
