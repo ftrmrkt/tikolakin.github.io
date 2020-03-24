@@ -4,7 +4,7 @@ logo:             logo.jpg
 disqus_shortname: tikolakingithubio
 search:           false
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:
+url:              https://tikoqa.com
 
 # Owner/author information
 owner:
